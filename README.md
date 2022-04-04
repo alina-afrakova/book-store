@@ -1,12 +1,10 @@
 # Система контроля ассортимента книжного магазина
+### Файловая структура системы
+* Book.py — описание и раелизация класса Воок, а также перечислимых классов ThemeLabel и ThemeLabel
 
-## Файловая структура системы
+* Order.py — описание и реализация классов Order, BookOrder и PublishingOrder, а также перечислимого класса OrderStatus
 
-Book.py — описание и раелизация класса Воок, а также перечислимых классов ThemeLabel и ThemeLabel
-
-Order.py — описание и реализация классов Order, BookOrder и PublishingOrder, а также перечислимого класса OrderStatus
-
-BookShop.py — описание и реализация классов Stock и BookShop
+* BookShop.py — описание и реализация классов Stock и BookShop
 
 System.py — описание и реализация классов Randomizer и System, а также функции начального экрана с заданием параметров get_start_parameters
 
@@ -16,4 +14,4 @@ books.csv — файл с начальным ассортиментом мага
 
 customers.txt — файл с фамилиями потенциальных покупателей
 
-## Запуск программы:  python3 main.py
+### Запуск программы:  python3 main.py
