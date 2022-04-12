@@ -399,7 +399,8 @@ class System:
     def show_statistics(self):
         self.text_box.config(state='normal')
         self.text_box.delete(1.0, 'end')
-        self.text_box.insert(tk.END, f"День: {self.current_day}\n")
+        last = " --- Последний день моделирования." if self.current_day == self.system_period else ""
+        self.text_box.insert(tk.END, f"День: {self.current_day}{last}\n")
         for i, (key, value) in enumerate(self.statistics.items()):
             if i < 3:
                 self.text_box.insert(tk.END, f"{key}: {value} шт.\n")
